@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Bear Vintages</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="themes/Wine.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/customstyle.css" />
+
+    <!--Scripts-->
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/js.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <section data-role="page" id="home" data-theme="b">
+        <!--home-->
+
+
+
+        <!--Panel Left-->
+
+        <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+
+            <div class="ui-panel-inner">
+                <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+                    <li><a href="#" class="ui-btn ui-state-disabled">Home</a>
+                    </li>
+                    <li><a href="#info" class="ui-btn">About Me</a>
+                    </li>
+            
+
+                </ul>
+            </div>
+        </div>
+        <!--Panel Left End-->
+
+
+
+        <!--header-->
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+
+            <h1 class="ui-title" role="heading" aria-level="1">Black Bear Vintages</h1>
+
+            <img src="img/Reisling.jpg" alt="vineyard"  class="header-img">
+
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+
+
+        <!--header end-->
+
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <p>Welcome to Black Bear Vintages. We specialize in Ice Wines made from the finest Blueberries and Blackberies here in Ottawa. Please feel free to enjoy our site as you learn, and understand the joys of wine tasting!</p>
+
+            <div class="choice_list" data-theme="b">
+
+                <h1>Please select a tutorial</h1>
+
+                <ul data-role="listview" data-inset="true" data-theme="b">
+
+                    <li>
+                        <a href="#wine" data-transition="pop" data-theme="b">
+                            <img src="img/wine_cellar_01.jpg" alt="" class="win-taste" />
+                            <h3>Wine Tasting 101</h3>
+                            <p>Explore the wonderful world of wine!</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-transition="pop" data-theme="b">
+                            <img src="img/wine-tasting.jpg" alt="" id="adv-taste" />
+                            <h3>Advanced Wine Tasting</h3>
+                            <p>Continue the Journey into Wine Country!</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </article>
+    
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                            <li><a href="#home" class="ui-btn ui-state-disabled" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- /page -->
+
+    <!--Wine Tutorial-->
+
+
+
+    <section data-role="page" id="wine" data-theme="b" data-dialog="false">
+        <!--home-->
+
+
+        <!--Panel Left-->
+
+        <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+
+            <div class="ui-panel-inner">
+                <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h4>Wine Tasting</h4>
+                        <ul data-role="listview">
+                            <li><a href="#win1" class="ui-btn">Step 1</a>
+                            </li>
+                            <li><a href="#win2" class="ui-btn">Step 2</a>
+                            </li>
+                            <li><a href="#win3" class="ui-btn">Step 3</a>
+                            </li>
+                            <li><a href="#win4" class="ui-btn">Step 4</a>
+                            </li>
+                            <li><a href="#win5" class="ui-btn">Step 5</a>
+                            </li>
+                            <li><a href="#win6" class="ui-btn">Step 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--Panel Left End-->
+
+
+
+        <!--header-->
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit" data-theme="b">
+            <h1 class="ui-title" role="heading" aria-level="1">Wine Tasting</h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+
+
+
+
+
+        <!--header end-->
+
+        <!--Frontpage-->
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Welcome to Wine Tasting 101</h1>
+            <p>Looking to learn a little about wine? or perhaps you're off to a party and want to impress some friends. Whatever it is, learning about wine will improve your sense of taste as well as help you buy better wine, so get out your wine goblets, corkscrew, and favorite bottle and dive in to this intro course to wine tasting!</p>
+
+            <a href="#win1" id="startTut" class="ui-shadow ui-btn ui-corner-all" data-transition="pop" data-theme="b">Start Tutorial</a>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                            <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+    <section data-role="page" id="win1" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 1 of 6</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>A proper glass will make any wine taste better</h1>
+            <img class="winGlasses" src="img/glasses.jpg" />
+            <p>Lets set the record straight, you can drink wine out of a toilet bowl if you wanted, but any proper tasing of wine comes with a proper set of wine goblets. This is because with the varying types of wine goblets made each has a purpose and tradition. However it is to note, the effect of glass shape on the taste of wine has not been demonstrated by any scientific study and remains controversial.
+            </p>
+            <p>It is however believed by some that the shape of the glass is important, as it concentrates the flavour and aroma (or bouquet) to emphasize the varietal's characteristic.
+            </p>
+
+
+
+
+
+            <a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-state-disabled backP" data-theme="b">Back</a>
+
+
+
+            <a href="#win2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="b">Next</a>
+
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+    <section data-role="page" id="win2" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 2 of 6</h1>
+
+
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Wine tastes better served slightly cool</h1>
+
+            <p>So you have your wine goblets ready, now what?</p>
+            <p>Well, for starters all wine should be stored at the same temperature, regardless of its color. But reds and whites are consumed at quite different temperatures. Too often people drink white wines too cold and red wines too warm, limiting how much you can enjoy the wine.
+
+                <p>*A white that’s too cold will be flavorless and a red that’s too warm is often flabby and alcoholic. Here is a key to ideal wine service temperatures:
+                </p>
+
+
+
+
+                <div data-role="collapsible" data-inset="false">
+
+                    <h3>Ideal Wine Temperatures</h3>
+
+                    <ul data-role="listview" data-inset="false">
+                        <li>Red Wine: 11-20 °C</li>
+
+                        <li>White Wine: 4-14 °F</li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+                <a href="#win1" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+                <a href="#win3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="b">Next</a>
+                </div>
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="win3" data-theme="b" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 3 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Opening Your First Bottle Of Wine</h1>
+
+            <p>While there are many methods to uncorking a bottle of wine, there are definitly wrong ways in doing so. This method will allow you to safely and properly uncork your Vino.</p>
+
+
+            <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                <img class="popphoto" src="img/openwine.jpg" alt="Wine Opening Steps" style="width:50%">
+            </a>
+
+            <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <img class="popupphoto" src="img/openwine.jpg" style="max-height:512px;" alt="Open Wine">
+            </div>
+
+            <ul>
+                <li>Make sure you have a corkscrew availiable.</li>
+            </ul>
+            <ol>
+                <li>Place the knife below the lip of the bottle and cut.</li>
+                <li>Set the screw just off center and insert, rotating straight into the cork.</li>
+                <li>Continue to screw into the cork until only one curl remains.</li>
+                <li>Lever on the first step</li>
+                <li>Lever on the second, finally easing the cork out with your hand.</li>
+            </ol>
+
+
+            
+
+            <a href="#win2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+            <a href="#win4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="b">Next</a>
+
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="win4" data-theme="b" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 4 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Pouring Your First Glass</h1>
+
+            <img class="pouring" src="img/pouring.jpg" alt="Red Wine Pouring">
+
+            <p>First, it is important to note, if your pouring for guests then wine should be presented with the label facing the individual. Proper etiquette recommends pouring for the women first, and starting with the eldest woman at the table and filling clockwise. Then the men are served.</p>
+            <p>The glasses should be poured approximately halfway, and then the bottle should be twisted when finished to avoid wine dripping on the table. Red and white wines should be poured into the center of the glass, while sparkling wines and champagne should be served into a tilted glass to keep the bubbles intact.</p>
+
+
+
+
+
+
+            <a href="#win3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+            <a href="#win5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="b">Next</a>
+        
+
+        </article>
+
+    </section>
+    <!--home-->
+
+
+
+
+    <section data-role="page" id="win5" data-theme="b" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 5 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>How to Hold your Wine Glass</h1>
+
+
+            <p class="header2">The Way You Hold Your Glass Shows Your Class</p>
+
+            <div class="imageBar">
+                <a href="#popupBase" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    <img class="imageBar" src="img/base.jpg" alt="Pinch at Base" style="width:24%">
+                </a>
+
+                <div data-role="popup" id="popupBase" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img class="imageBar" src="img/base.jpg" style="max-height:512px;" alt="Pinch at Base">
+                </div>
+
+                <a href="#popupFoot" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    <img class="imageBar" src="img/foot.jpg" alt="Lever with Thumb" style="width:24%">
+                </a>
+
+                <div data-role="popup" id="popupFoot" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img class="imageBar" src="img/foot.jpg" style="max-height:512px;" alt="Lever with Thumb">
+                </div>
+
+                <a href="#popupThumb" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    <img class="imageBar" src="img/thumb.jpg" alt="Thumb and Forefinger" style="width:24%">
+                </a>
+
+                <div data-role="popup" id="popupThumb" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img class="imageBar" src="img/thumb.jpg" style="max-height:512px;" alt="Thumb and Forefinger">
+                </div>
+
+                <a href="#popupStem" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                    <img class="imageBar" src="img/stem.jpg" alt="Pinch at Stem" style="width:24%">
+                </a>
+
+                <div data-role="popup" id="popupStem" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img class="imageBar" src="img/stem.jpg" style="max-height:512px;" alt="Pinch at Stem">
+                </div>
+            </div>
+
+            <p>There is etiquette to holding a wine glass. Above all, it should be steady and comfortable in your hand. But etiquette dictates one should hold a glass by the stem or base, not by the bowl. Doing so avoids unsightly fingerprints, and if you hold a glass by the bowl, your body temperature can affect the temperature of the wine—often for the worse. Not only that, it can also be easier to swirl and look at the wine when you're holding the glass the correct way.</p>
+
+
+
+
+
+
+            <a href="#win4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+            <a href="#win6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="b">Next</a>
+
+
+        </article>
+
+    </section>
+    <!--home-->
+
+
+
+
+
+
+    <section data-role="page" id="win6" data-theme="b" data-dialog="true" data-close-btn="none">
+
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 6 of 6</h1>
+        </div>
+
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>It's time to take your first sip. But First...</h1>
+
+            <p>The following wine tasting tips are practiced by sommeliers to refine their palates and sharpen their ability to recall wines. Even though this method is used by pro’s, it’s actually quite simple to understand and can help anyone to improve their wine palate.</p>
+
+            <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+
+                <div data-role="collapsible">
+
+                    <h3>Look</h3>
+
+                    <p>Check out the color, opacity and viscosity (wine legs). You don’t really need to spend more than 5 seconds on this step.</p>
+
+                    <a href="#howto1" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                        <img class="howto1" src="img/how-to-taste-wine-step-1.jpg" alt="How To 1" style="width:100%">
+                    </a>
+
+                    <div data-role="popup" id="howto1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                        <a href="#howto1" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                        <img class="howto1" src="img/how-to-taste-wine-step-1.jpg" style="max-height:512px;" alt="How To 1">
+                    </div>
+
+                </div>
+
+                <div data-role="collapsible">
+
+                    <h3>Smell</h3>
+
+                    <p>Pick out at least 2 flavors and take your time identifying them. There are 3 types of wine aromas:</p>
+                    <p>Primary Aromas come from grapes and include fruit, herb and flower notes</p>
+                    <p>Secondary Aromas come from fermentation and yeast aromas.</p>
+                    <p>Tertiary Bouquets come from aging, oxidation and oak such as baking spices, nutty aromas and vanilla.</p>
+
+                    <a href="#howto2" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                        <img class="howto2" src="img/how-to-taste-wine-step-2.jpg" alt="How To 2" style="width:100%">
+                    </a>
+
+                    <div data-role="popup" id="howto2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                        <a href="#howto2" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                        <img class="howto2" src="img/how-to-taste-wine-step-2.jpg" style="max-height:512px;" alt="How To 2">
+                    </div>
+
+                </div>
+
+                <div data-role="collapsible">
+
+                    <h3>Taste</h3>
+
+                    <p>Two elements make up taste: flavor and structure.</p>
+                    <p>Flavors such as lemon, raspberry or coconut.</p>
+                    <p>Structure such as the level of sweetness, body, alcohol, acidity, and tannin.</p>
+                    <p>Profile The taste of wine is also time-based, there is a beginning, middle (mid-palate) and end (finish).</p>
+
+                    <a href="#howto3" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                        <img class="howto3" src="img/how-to-taste-wine-step-3.jpg" alt="How To 3" style="width:100%">
+                    </a>
+
+                    <div data-role="popup" id="howto3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                        <a href="#howto3" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                        <img class="howto3" src="img/how-to-taste-wine-step-3.jpg" style="max-height:512px;" alt="How To 3">
+                    </div>
+
+                </div>
+                <div data-role="collapsible">
+                    <h3>Conclude</h3>
+
+                    <p>Did the wine taste balanced or out of balance? Did you like the wine? Was this wine unique or unmemorable? Were there any characteristics that shined through and impressed you?</p>
+
+                    <a href="#howto4" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                        <img class="howto4" src="img/how-to-taste-wine-step-4.jpg" alt="How To 4" style="width:100%">
+                    </a>
+
+                    <div data-role="popup" id="howto4" data-overlay-theme="b" data-theme="b" data-corners="false">
+                        <a href="#howto4" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                        <img class="howto4" src="img/how-to-taste-wine-step-4.jpg" style="max-height:512px;" alt="How To 4">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <a href="#win5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+            <a href="#win7" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right ui-state-disabled nextP" data-theme="b" >Next</a>
+
+
+        </article>
+    </section>
+    <!--home-->
+
+
+
+
+
+    <!--Wine Tutorial End-->
+
+
+    <!--About Section-->
+    <section data-role="page" id="info" data-theme="b">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <!--header-->
+            <h1>About Me</h1>
+        </div>
+        <img src="" alt "Caleb Bear">
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <p>My name is Caleb,and I am student attending the Mobile Application Design & Development course. I am a newbie designer and developer and an avid Warmachine player.</p>
+            
+            <a href="#popupMe" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                <img class="popphoto" src="img/me.jpg" alt="Me" style="width:50%">
+            </a>
+
+            <div data-role="popup" id="popupMe" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#popupMe" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <img class="popupphoto" src="img/me.jpg" style="max-height:512px;" alt="Paris, France">
+            </div>
+            
+            <h1>Skills</h1>
+            <ul data-role="listview">
+                <li>Javascript</li>
+                <li>HTML5 & CSS3</li>
+            </ul>
+
+
+
+                <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#" class="ui-btn ui-state-disabled" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+        </article>
+
+    </section>
+    <!--home-->
+    <!--About Section End-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Install Linux in Virtual Machine</title>
+       
+       <!------CSS-------->
+       <link rel="stylesheet" href="Css/customstyle.css" />
+       <link rel="stylesheet" href="Css/jquery.mobile.icons.min.css" />
+       <link rel="stylesheet" href="Css/Wine.min.css" />
+       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+       
+       <!------JavaScript------->
+       
+       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+              
+    </head>
+       
+        <body>
+            <section  data-role="page" id="home" data-theme="a">
+               <!-----HOME----->
+               
+               
+               
+               
+            <!-----Panel Left---->
+                <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+                    <div class="ui-panel-inner">
+                        <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+            
+
+                </ul>
+                    </div>
+                </div>
+                <!----header---->
+                
+                <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+
+            <h1 class="ui-title" role="heading" aria-level="1">How to install Linux in Virtual Machine</h1>
+
+            <img src="img/vmware-featured.jpg" alt="vmware"  class="header-img">
+
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+           
+           
+           <!----content---->
+           <article data-role="content" data-theme="a">
+           <p>Hi, There is a tutorial that teach you how to install Linux(Fedora) in your Mac OS with Virtual Machine. </p>
+            <h3>Click to Start Tutorial</h3> 
+            <a href="#win1" id="startTut" class="ui-shadow ui-btn ui-corner-all" data-transition="pop" data-theme="a">START</a>   
+                </article>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                            <li><a href="#home" class="ui-btn ui-state-disabled" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+
+                </ul>
+            </div>
+        </div>
+            </section>
+            
+        <!--------Tutorial------>
+        <!----page1--->
+        <section data-role="page" id="win1" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 1 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Download Vmware First</h1>
+            <img class="vmwarelogo" src="img/vmware_cloud_logo.jpg" />
+           <ol>
+            <li>Launch a web browser: https://plato.algonquincollege.com/DigitalResources/ </li>
+            <li>Login with your Algonquin College Username and password.</li>
+            <li>Click the tab: Your Software</li>
+            <li>Click the tab: VMware</li>
+            <li>Select: VMware Fusion 8 (for Mac OS X)</li>
+            <li>Click: Add To Cart</li>
+            <li>Click: Check Out</li>
+            <li>Click: I Accept to accept the EULA</li>
+            <li>Click: Proceed With Order</li>
+            <li>Click: Start Download</li>
+            </ol>
+
+
+            <a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-state-disabled backP" data-theme="a">Back</a>
+
+
+
+            <a href="#win2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>
+            
+            
+      <!----page2--->
+      
+      
+       <section data-role="page" id="win2" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 2 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Install Vmware</h1>
+            <p>Locate the VMware-Fusion .DMG file in your Downloads folder.</p>
+            <p>Double-click the .DMG file and follow the instructions.</p>
+            <h3>During the installation:</h3>
+            <ul>
+                <li>accept all default settings</li>
+                <li>enter your Product Key when prompted</li>
+            </ul>
+            <p>Once the installation has successfully completed, drag and drop the .DMG file into the Trash.</p>
+            <p>Update Fusion to the newest version: 8.0.1</p>
+ 
+             <a href="#win1" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+            <a href="#win3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+            </section>
+            
+            <!----page3--->
+             <section data-role="page" id="win3" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 3 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Get Fedora</h1>
+            <p>Fedora is a popular distribution of the Linux operating system.</p>
+            <p>Download the latest version of the workstation image:</p> 
+            <p>http://getfedora.org/en/workstation/download/ </p>
+            <div data-role="collapsible" data-inset="false">
+            <h3> Verify:</h3>
+            <ul data-role="listview" data-inset="false">
+            <li>Fedora Workstation Version 22</li>
+            <li>64-bit</li>
+            <li>1.3GB Live Image</li>
+            </ul>
+            </div>
+        
+
+             <a href="#win2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+
+            <a href="#win4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+            
+
+
+        </article>
+    </section>
+       
+       <!----page4---->
+       
+        <section data-role="page" id="win4" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 4 of 7</h1>
+            
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content--> 3
+            <h1>Create a New Linux Virtual Machine</h1>
+          <p>Launch VMware Fusion</p>
+          <ul>
+              <li>Applications -> VMware Fusion</li>
+          </ul>
+          <ol>
+              <li>File -> New...</li>
+              <li><strong>Click</strong> (notice: left-hand side with a coloured background): Install from disc or image</li>
+              <li>Click: Continue</li>
+              <li><strong>Click</strong>: Use another disk or disc image...</li>
+              <li>Browse your filesystem and find the Fedora ISO file you downloaded in the previous step.</li>
+              <li>Click: Open</li>
+              <li>Click: Continue</li>
+              <li>Click: Customize Settings</li>
+          </ol>  
+        
+           
+
+
+
+             <a href="#win3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+
+            <a href="#win5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>
+            
+        <!-----page5---->        
+                        
+ <section data-role="page" id="win5" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 5 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Customize VM Settings</h1>
+        <ol>
+            <li>Save As (replace with): <strong>tuxserver</strong></li>
+            <li>Click: Save</li>
+        </ol>
+        <p><strong>System Settings -> General</strong></p>
+        <p>Notes: Fedora Workstation (64-bit)</p>
+        <p><strong>System Settings -> Processors & Memory</strong></p>
+        <ul>
+            <li>Processors: 4 processor cores (assuming you have 8 cores in total; select fewer cores if you don't have 8 total)</li>
+            <li>Memory: select the recommended value</li>
+            <li>Advanced Options:</li>
+            <ul>
+                <li>Check: Enable hypervisor applications in this virtual machine</li>
+                <li>Check: Enable code profiling applications in this virtual machine</li>
+            </ul>
+        </ul>  
+    <p><strong>System Settings -> Display</strong></p>       
+    <p>Un-check: Accelerate 3D Graphics</p>
+    <h3>Close the Settings window</h3>
+       <div data-role="collapsible" data-inset="false">
+       
+    <ul data-role="listview" data-inset="false">
+    
+     <li>click the red X located in the upper left hand side of the Settings window.</li>
+           
+            </ul>
+            </div>
+    
+
+
+
+             <a href="#win4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+
+            <a href="#win6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>
+                       
+             <section data-role="page" id="win6" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 6 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Install Fedora Part1</h1>
+        <ol>
+            <li>Click the white triangle to boot the Fedora operating system's Live installer.</li>
+            <li>Wait for the Fedora operating system to complete its boot process.</li>
+            <li>Click: Install to Hard Disk</li>
+            <li>Select your preferred language during installation: English (Canada)</li>
+            <li>Click: Continue</li>
+            <li>Click: Localization -> Date & Time</li>
+            <ol>
+            <li>Region: Americas</li>
+            <li>City: Toronto (or Montreal if you're a Habs fan) </li>
+            <li>Click: Done</li>
+            </ol>
+            <li>Click: Network Configuration</li>
+            <ol>
+                <li>Replace the Hostname of localhost.localdomain with: tuxserver</li>
+                <li>Click: Done</li>
+            </ol>
+            <li>Click: System -> Installation Destination</li>
+            <li>Select: the VMware Disk</li>
+            <ol>
+                <li>Verify: 20 GiB</li>
+                <li>Click: Done</li>
+            </ol>
+            <li>Click: Begin Installation (when it becomes available)</li>
+        </ol>
+           
+
+
+
+             <a href="#win5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+
+            <a href="#win7" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section>           
+    
+     <section data-role="page" id="win7" data-theme="a" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Step 7 of 7</h1>
+
+
+
+        </div>
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <h1>Install Fedora Part2</h1>
+    <ol start="11">
+        <li>During the installation:</li>
+        <ol>
+            <li>Click: ROOT PASSWORD</li>
+            <ol>
+                <li>Set the Root Password to: abc123</li>
+                <li>Confirm: abc123</li>
+                <li>Click: Done</li>
+                <li>Click: Done again to acknowledge root's password is weak. </li>
+            </ol>
+            <li>Click: User Creation</li>
+            <ol>
+           <li>Full name: your first name & last name</li>
+           <li>Username (replace with): your username (e.g. bond0007)</li>
+           <li>Check: Make this user administrator</li>
+           <li>Set and confirm your password.</li>
+           <li>Click: Done (to create your user account)</li>
+            </ol>
+        </ol>
+        <li>Click: Finish configuration (when it becomes available)</li>
+        <li>Click: Quit (when it becomes available)</li>
+        <li>Reboot (aka restart):</li>
+        <ol>
+            <li>Click the power symbol in the upper right corner (look for the circle with a vertical line)</li>
+            <li>Click the power symbol in the dialog.</li>
+            <li>Click: Restart</li>
+        </ol>
+        <li>Wait for Fedora to restart.</li>
+    </ol>    
+           
+
+
+
+            <a href="#win6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP" data-theme="b">Back</a>
+
+
+
+            <a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP" data-theme="a">Next</a>
+
+
+
+        </article>
+    </section> 
+    
+                                        
+<!--------ABOUT ME----->
+           
+           
+            <section data-role="page" id="info" data-theme="a">
+        <!--home-->
+        <div data-role="header" data-theme="a">
+            <!--header-->
+            <h1>About Me</h1>
+        </div>
+        <img src="" alt "Caleb Bear">
+        <article data-role="content" data-theme="a">
+            <!--content-->
+            <p>My name is Dingshuo Ye, and my English name is Maxwell. I am a student of Mobile application design and development program, and I never learned code before, so I am not good at code tho.</p>
+            
+            <a href="#popupMe" data-rel="popup" data-position-to="window" data-transition="slidefade">
+                <img class="popphoto" src="img/about%20me.png" alt="Me" style="width:50%">
+            </a>
+
+            <div data-role="popup" id="popupMe" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#popupMe" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <img class="popupphoto" src="img/me.jpg" style="max-height:512px;" alt="Paris, France">
+            </div>
+            
+            <h1>Skills</h1>
+            <ul data-role="listview">
+                <li>Javascript(really poor at)</li>
+                <li>HTML5 & CSS3</li>
+                <li>Photoshop (a little)</li>
+                <li>Illustrator(a little)</li>
+            </ul>
+
+
+
+                <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                            </li>
+
+                            <li><a href="#" class="ui-btn ui-state-disabled" data-icon="info" data-iconpos="top">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+        </article>
+
+    </section>                        
+            
+        </body>
+</html>
